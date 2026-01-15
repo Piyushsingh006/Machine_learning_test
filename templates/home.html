@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FWI Prediction</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        input { margin: 5px; padding: 6px; width: 200px; }
+        button { padding: 10px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+<h2>Fire Weather Index (FWI) Prediction</h2>
+
+<form action="/Predictdata" method="post">
+
+    <input type="number" step="any" name="Temp" placeholder="Temperature (°C)" required><br>
+    <input type="number" step="any" name="RH" placeholder="Relative Humidity (%)" required><br>
+    <input type="number" step="any" name="Ws" placeholder="Wind Speed (km/h)" required><br>
+    <input type="number" step="any" name="Rain" placeholder="Rain (mm)" required><br>
+
+    <input type="number" step="any" name="FFMC" placeholder="FFMC" required><br>
+    <input type="number" step="any" name="DMC" placeholder="DMC" required><br>
+    <input type="number" step="any" name="DC" placeholder="DC" required><br>
+    <input type="number" step="any" name="ISI" placeholder="ISI" required><br>
+    <input type="number" step="any" name="BUI" placeholder="BUI" required><br>
+
+    <button type="submit">Predict FWI</button>
+</form>
+
+<h2>
+    The FWI prediction is {{results}}
+</h2>
+
+
+</body>
+</html>
