@@ -47,4 +47,16 @@ The model uses the following features:
 ---
 
 ## 📂 Project Structure
+END-TO-END-ML-PROJECT/
+│── application.py
+│── requirements.txt
+│── README.md
+│
+├── models/
+│ ├── ridge.pkl
+│ └── scaler.pkl
+│
+└── templates/
+├── index.html
+└── home.html
 
